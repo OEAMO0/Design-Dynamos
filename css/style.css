@@ -30,23 +30,25 @@ header {
     height: 45px; 
     display: flex;
     align-items: center; 
-    justify-content: center; 
+    justify-content: space-between;
 }
 
 .border-bottom {
     padding: 5px 10px; 
     height: 45px; 
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid;
     width: 100%;
 }
 
 header h1 {
-    display: flex;
-    width: 100%;
     color: #cecece;
+}
+
+h1:hover {
+    color: #111;
 }
 
 header nav ul {
