@@ -6,7 +6,18 @@ body {
     padding: 0;
 }
 
+/* <<<<<<< HEAD */
 .img-container {
+/* ======= */
+header {
+    background-color: #000;
+    padding: 10px 20px; 
+    height: 40px; 
+    }
+}
+
+header nav ul {
+/* >>>>>>> 423b9e8a440890bf2812f1c09b9172fbe5476378 */
     display: flex;
     height: 80px;
     flex-flow: row wrap;
@@ -52,4 +63,13 @@ body {
     background-color: black;
     width: fit-content;
     height: 250px;
+
+}
+
+.border-bottom > h1 {
+    cursor: pointer;   
+}
+
+.border-bottom > h1:hover {
+    color: gold;
 }
