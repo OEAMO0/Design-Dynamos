@@ -50,13 +50,14 @@ header {
 }
 
 header h1 {
-<<<<<<< HEAD
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     width: 100%;
-=======
->>>>>>> origin/fresh-bread
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 100%
     color: #cecece;
     cursor: default;
     -webkit-user-select: none; /* Safari */        
