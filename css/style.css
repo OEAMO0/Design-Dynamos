@@ -36,15 +36,15 @@ header {
     height: 45px; 
     display: flex;
     align-items: center; 
-    justify-content: center; 
+    justify-content: space-between;
 }
 
 .border-bottom {
     padding: 5px 10px; 
     height: 45px; 
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid;
     width: 100%;
 }
@@ -53,7 +53,7 @@ header h1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    width: 100%;
+    width: 100%ك
     color: #cecece;
     cursor: default;
     -webkit-user-select: none; /* Safari */        
@@ -61,6 +61,10 @@ header h1 {
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
     transition: 0.5s;
+}
+
+h1:hover {
+    color: #111;
 }
 
 header nav ul {
