@@ -80,10 +80,11 @@ body {
 }
 
 @media (max-width: 768px) {
+
     .menu-items {
         display: none;
         flex-direction: column;
-        gap: 10px;
+        gap: 13px;
         background-color: #2c2c2c;
         padding: 10px;
         border-radius: 10px;
@@ -92,6 +93,11 @@ body {
         right: 10px;
         z-index: 10;
         text-align: center;
+    }
+
+    .menu-items > a {
+        margin: 0;
+        padding: 8px;
     }
 
     .menu-items.show {
