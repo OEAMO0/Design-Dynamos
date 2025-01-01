@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to top , #292929 60% , rgb(116, 116, 116));
+    background-image: linear-gradient(to top , #222222 55% , rgb(102, 101, 101));
     border-radius: 300px;
     padding: 15px;
     gap: 25px;
