@@ -1,302 +1,106 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1c1c1c;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    box-sizing: border-box;
-    
-}
-
-.cn-link {
-    transition: 0.5s;
-}
-
-.cn-link:hover {
-    color: rgb(49, 49, 49);
-    text-decoration: underline;
-}
-
-
-header {
-    padding: 10px 10px; 
-    height: 45px; 
+    background: url("../img/bgi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
-    align-items: center; 
-    justify-content: space-between;
-}
-
-.border-bottom {
-    padding: 5px 10px; 
-    height: 45px; 
-    display: flex;
+    flex-flow: column wrap;
     align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid;
-    width: 100%;
-}
-
-header h1 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    width: 100%
-    color: #cecece;
-    cursor: default;
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
-    transition: 0.5s;
-}
-
-h1:hover {
-    color: #111;
-}
-
-header nav ul {
-    display: flex;
-    width: 100%;
-    padding: 0;
     margin: 0;
-    list-style: none; 
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-header nav ul li {
-    margin: 0 5px; 
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px; 
-    transition: .5s ease;
-}
-
-header nav ul li a:hover {
-    color: #333;
-    transform: scale(1.1);
-}
-
-
-.pointer {
-    cursor: default;
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
-}
-
-
-.main {
+.nav-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to top , #292929 60% , rgb(116, 116, 116));
+    border-radius: 300px;
+    padding: 15px;
+    gap: 25px;
+    height: 50px;
+    width: calc(100% - 20%);
     position: relative;
-    display: none;
+    margin-top: 7px;
 }
 
-.main3 {
-    overflow: auto;
-    display: none;
-    position: absolute;
-    background-color: #2e2e2e;
-    min-width: 200px;
-    border-radius: 1px 0 0 1px;
-    transition: .5s ease;
-    top: 40px;
-    right: -40px;
-    box-shadow: 0 0 10px 5px #111;
-    z-index: 1000;
-}
-
-.main:hover .main3 {
-    display: block;
-}
-
-
-
-.main3 a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    transition: .5s ease;
-    text-align: center;
-}
-
-.main3 a:hover {
-    background-color: #222222;
-    color: #9e9e9e;
-}
-
-/* ما لقيت لها حل بس النقطة ما تخلي المين يختفي */
-/* لا تشيل النقطة لو شلتها المين بيختفي */
-header nav ul . {
-    display: none;
-}
-
-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-  
-  
-  .content {
-    position: absolute;
-    color: white;
-    text-align: center;
-    width: 100%;
-    margin-top: 60px;
-    font-size: 24px;
-  }
-  
-  .content h1 {
-    padding: 10px;
-    color: #cecece;
-  }
-
-  .content p {
-    padding: 10px;
-  }
-
-  .content span a {
-    color: #616161;
-    text-decoration: none;
-  }
-
-
-main {
-    width: 100%;
+.menu-items {
     display: flex;
-    text-align: center;
-    justify-content: center;
+    gap: 15px;
 }
 
-article {
-    width: 100%;
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    user-select: none;
+    transition: 0.3s ease-in-out;
 }
 
-article video {
-    width: 100%;
+.menu-icon:hover {
+    font-size: 35px;
+    text-shadow: 0 0 7px white;
 }
 
-
-footer {
-    padding: 10px;
-    padding-bottom: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    text-align: center;
-    flex-direction: row;
-
+.cn-txt {
+    margin-right: auto;
+    font-size: 35px;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 0 0 6px white;
+    user-select: none;
 }
 
-.border {
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    border-top: 5px solid silver;
-}
-
-footer a {
+.menu-items > a {
+    color: #dbdbdb;
+    font-weight: bolder;
+    background-color: black;
+    border: 2px solid #d4d4d4;
+    border-radius: 10px;
+    padding: 7px 10px;
+    text-shadow: 0 0 5px white;
     text-decoration: none;
-    color: #444444;
-    margin-right: 20px;
-    font-size: 32px;
-    transition: .5s ease;
+    transition: all 0.3s ease;
+    margin-left: 20px;
 }
 
-footer a:hover {
-    color: #111;
-    font-size: 37px;
+.menu-items > a:hover {
+    background-color: #fff;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.1);
+    text-shadow: 0 0 6px black;
 }
 
-@media (orientation: portrait) {
+.menu-items > a:visited {
+    text-decoration: none;
+}
 
-
-    .content {
-        font-size: larger;
-        direction: ltr;
-      }
-    
-    main {
-        width: 100%;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-    }
-    
-    article {
-        width: 100%;
-    }
-    
-    article video {
-        width: 100%;
-    }
-
-    .main {
-        position: relative;
-        display: inline-block;
-    }
-
-
-    header nav  ul  > ul li {
+@media (max-width: 768px) {
+    .menu-items {
         display: none;
-    }
-
-    header nav {
-        width: 100%;
-    }
-
-    header nav  ul {
-        width: 100%;
-        display: flex;
-	    flex-direction: row-reverse;
-    }
-
-
-    .main3 {
-        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #2c2c2c;
+        padding: 10px;
+        border-radius: 10px;
         position: absolute;
-        background-color: #2e2e2e;
-        min-width: 200px;
-        min-height: 100%;
-        transition: .5s ease;
-        top: 30px;
-        right: -20px;
-        box-shadow: 0 0 5px 2px #161616d0;
+        top: 75px;
+        right: 10px;
+        z-index: 10;
+        text-align: center;
     }
-}
 
-.content span a::selection {
-    color: #9e9e9e;
-    background-color: #2e2222;
-}
+    .menu-items.show {
+        display: flex;
+    }
 
-::selection {
-    color: #2e2222;
-    background-color: #9e9e9e;
+    .menu-icon {
+        display: block;
+        margin-right: 10px;
+        text-shadow: 0 0 5px white;
+    }
 }
