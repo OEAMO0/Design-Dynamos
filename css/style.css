@@ -18,7 +18,6 @@ body {
     padding: 0;
     height: 100%;
     box-sizing: border-box;
-    
 }
 
 
@@ -31,28 +30,29 @@ header {
     align-items: center; 
     justify-content: center; 
     z-index: 100;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .border-bottom {
+    background: linear-gradient(#333333, #242424);
+    margin-top: 10px;
     padding: 5px 10px; 
     height: 45px; 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid;
-    width: 100%;
+    border-radius: 50px;
+    width: 75%;
 }
 
 header h1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    width: 100%
     color: #cecece;
     cursor: default;
     -webkit-user-select: none; /* Safari */        
@@ -62,9 +62,6 @@ header h1 {
     transition: 0.5s;
 }
 
-h1:hover {
-    color: #111;
-}
 
 header nav ul {
     display: flex;
@@ -238,6 +235,20 @@ footer a:hover {
 }
 
 @media (orientation: portrait) {
+
+
+    .border-bottom {
+        background: linear-gradient(#333333, #242424);
+        margin-top: 10px;
+        padding: 5px 10px; 
+        height: 45px; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 50px;
+        width: 100%;
+    }
+    
 
 
     .content {

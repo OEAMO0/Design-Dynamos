@@ -6,23 +6,17 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #1c1c1c;
+    background: linear-gradient(#131313, #0c0c0c);
     color: #fff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 
-.block {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
 
 header {
     padding: 10px 10px; 
@@ -33,13 +27,15 @@ header {
 }
 
 .border-bottom {
+    background: linear-gradient(#333333, #242424);
+    margin-top: 10px;
     padding: 5px 10px; 
     height: 45px; 
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-    border-bottom: 1px solid;
-    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    width: 75%;
 }
 
 
@@ -134,16 +130,16 @@ main h1 {
 
 .article1 {
     width: 100%;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
 }
 
 .con {
-    width: 50%;
+    overflow: hidden;
+    width: 65%;
     background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
+    border-radius: 16px;
     text-align: center;
     margin: 10px;
     transition: .5s ease;
@@ -153,17 +149,26 @@ main h1 {
 }
 
 .con:hover {
-    box-shadow: 0 2px 5px #dddddd;
+    box-shadow: 0 0 5px 1.4px #dddddd;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 
 .iomg {
     width: 50%;
+    overflow: hidden;
 }
 
 .img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease;
+}
+
+.img:hover {
+    transform: scale(1.1);
 }
 
 .text {
@@ -189,7 +194,17 @@ main h1 {
 @media (orientation: portrait) {
 
     
-
+    .border-bottom {
+        background: linear-gradient(#333333, #242424);
+        margin-top: 10px;
+        padding: 5px 10px; 
+        height: 45px; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 50px;
+        width: 100%;
+    }
 
 
     main h1 {
@@ -198,54 +213,63 @@ main h1 {
     }
 
 
-    .article1 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+        .article1 {
+            width: 100%;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+        }
     
-    .con {
-        width: 95%;
-        background: rgba(0, 0, 0, 0.7);
-        padding: 20px;
-        border-radius: 10px;
-        text-align: center;
-        margin: 10px;
-        transition: .5s ease;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
+        .con {
+            overflow: hidden;
+            width: 95%;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 16px;
+            text-align: center;
+            margin: 10px;
+            transition: .5s ease;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
     
-    .con:hover {
-        box-shadow: 0 2px 5px #dddddd;
-    }
-    
-    
-    .iomg {
-        width: 50%;
-    }
-    
-    .img {
-        width: 100%;
-        border-radius: 10px;
-    }
-    
-    .text {
-        width: 50%;
-    }
+        .con:hover {
+            box-shadow: 0 2px 5px #dddddd;
+            background: rgba(0, 0, 0, 0.8);
+        }
     
     
+        .iomg {
+            width: 50%;
+            overflow: hidden;
+        }
     
-    .text h3 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
+        .img {
+            width: 100%;
+            border-radius: 0 10px 10px 0;
+            display: flex;
+            justify-content: center;
+            transition: .5s ease;
+        }
     
-    .text p {
-        font-size: 15px;
-    }
+        .img:hover {
+            transform: scale(1.1);
+        }
+    
+        .text {
+            width: 50%;
+        }
+    
+    
+    
+        .text h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    
+        .text p {
+            font-size: 15px;
+        }
 
     .main {
         position: relative;

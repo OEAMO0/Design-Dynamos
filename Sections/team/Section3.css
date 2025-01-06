@@ -16,15 +16,6 @@ body {
     min-height: 100vh; /* ارتفاع الصفحة دائمًا بنفس ارتفاع النافذة */
 }
 
-.images {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
-}
 
 
 
@@ -37,13 +28,15 @@ header {
 }
 
 .border-bottom {
+    background: linear-gradient(#333333, #242424);
+    margin-top: 10px;
     padding: 5px 10px; 
     height: 45px; 
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-    border-bottom: 1px solid;
-    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    width: 75%;
 }
 
 header h1 {
@@ -130,70 +123,54 @@ main {
     margin-bottom: 15px;
 }
 
-.article1 {
-    width: 100%;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .con {
-    width: 50%;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin: 10px;
-    transition: .5s ease;
+    width: 100%;
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
+    justify-content: space-around;
 }
 
-.con:hover {
-    box-shadow: 0 2px 5px #dddddd;
-}
-
-
-.iomg {
-    width: 50%;
-}
-
-.img {
-    width: 75%;
-    border-radius: 10px;
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .text {
     width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.text h3 {
+    font-size: 2rem;
+}
+
+.text i {
+    font-size: 2.5rem;
 }
 
 
-
-.text h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
+.text-h1 {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.text .title, p {
-    font-size: 20px;
-    color: #6d6d6d;
-    margin-bottom: 10px;
+.text-h1 h1 {
+    width: 0;
 }
-  
-  a {
-    text-decoration: none;
-    font-size: 22px;
-    margin-top: 10px;
-    margin-right: 5px;
-    color: #9e9e9e;
-    transition: .5s ease;
-  }
-  
-  .a:hover {
-    color: rgb(255, 255, 255);
-  }
 
+.text-h1 i{
+    font-size: 13rem;
+}
 
 
 
@@ -202,27 +179,18 @@ main {
 @media (orientation: portrait) {
 
 
+    .border-bottom {
+        background: linear-gradient(#333333, #242424);
+        margin-top: 10px;
+        padding: 5px 10px; 
+        height: 45px; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 50px;
+        width: 100%;
+    }
 
-    .images1 {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-        transform: rotate(180deg);
-    }
-    .images2 {
-        position: absolute;
-        top: 110%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-        transform: rotate(180deg);
-    }
 
 
     .article1 {
@@ -233,10 +201,10 @@ main {
     }
     
     .con {
-        width: 90%;
+        overflow: hidden;
+        width: 95%;
         background: rgba(0, 0, 0, 0.7);
-        padding: 20px;
-        border-radius: 10px;
+        border-radius: 16px;
         text-align: center;
         margin: 10px;
         transition: .5s ease;
@@ -246,17 +214,25 @@ main {
     }
     
     .con:hover {
-        box-shadow: 0 2px 5px #dddddd;
+        box-shadow: 0 0 5px 1.4px #dddddd;
     }
     
     
     .iomg {
         width: 50%;
+        overflow: hidden;
     }
     
     .img {
-        width: 75%;
-        border-radius: 10px;
+        width: 100%;
+        border-radius: 0 10px 10px 0;
+        display: flex;
+        justify-content: center;
+        transition: .5s ease;
+    }
+    
+    .img:hover {
+        transform: scale(1.1);
     }
     
     .text {
